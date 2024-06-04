@@ -39,7 +39,7 @@ button {
 /* HEADER */
 header {
     background-color: black;
-    height: 100px;
+    height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -313,6 +313,8 @@ header.rolagem {
         @media(max-width:650px){
                 
         }     
+
+        
         
         .img1{
             width: 200px;
@@ -375,6 +377,7 @@ header.rolagem {
 
 .section_2{
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -521,4 +524,14 @@ header.rolagem {
 
 html,body {
     height: 100%;
+    transition: opacity 1s linear;
+}
+
+
+.init-hidden{
+    opacity: 1;
+}
+
+.init-hidden-off{
+    opacity: 1;
 }

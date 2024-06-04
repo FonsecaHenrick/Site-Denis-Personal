@@ -36,7 +36,7 @@ button {
 /* HEADER */
 header {
   background-color: black;
-  height: 100px;
+  height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -193,8 +193,7 @@ header.rolagem {
   }
 }
 .box {
-  animation: slideInDown;
-  animation-duration: 2s;
+
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
@@ -289,6 +288,7 @@ header.rolagem {
 
 .section_2 {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -297,8 +297,7 @@ header.rolagem {
   padding: 50px;
 }
 .section_2 .texto_1 {
-  animation: fadeInLeft;
-  animation-duration: 2s;
+
   width: 400px;
   margin: 0px;
   border-right: solid 2px #115511;
@@ -327,9 +326,13 @@ header.rolagem {
   }
 }
 
+iframe{
+  width: 500px;
+  height: 300px;
+}
+
 .texto_2 {
-  animation: fadeInRight;
-  animation-duration: 2s;
+ 
   width: 400px;
   padding-top: 25px;
 }
@@ -351,8 +354,7 @@ header.rolagem {
   z-index: 999;
 }
 .janela_modal .modal {
-  animation: zoomIn;
-  animation-duration: 1s;
+  
   position: fixed;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5882352941);
@@ -395,4 +397,13 @@ header.rolagem {
 
 html, body {
   height: 100%;
+  transition: opacity 1s linear;
+}
+
+.init-hidden {
+  opacity: 1;
+}
+
+.init-hidden-off {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
